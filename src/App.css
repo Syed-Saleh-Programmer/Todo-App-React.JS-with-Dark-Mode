@@ -1,0 +1,45 @@
+
+*{
+    transition: all .2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.todo-item{
+    transform: translateX(-150px);
+    animation: todoAnim;
+    animation-timing-function: ease;
+    animation-duration: .3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all .5s ease;
+    overflow-x: hidden;
+}
+
+button.delete-btn{
+    transition: all .2s ease;
+}
+
+.todo-item:hover button.delete-btn{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+@keyframes todoAnim{
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
